@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifegyaan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Lifegyaan</div>
+            <ul>
+                <li><a href="#authors">Authors</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>A Place to Share and Learn from Life Experiences</h1>
+                <form action="submit.php" method="post">
+                    <input type="text" name="query" placeholder="Search experiences">
+                    <button type="submit">Search</button>
+                </form>
+                <a href="#experiences" class="explore-btn">Explore Experiences</a>
+            </div>
+        </section>
+        <section id="share-experience" class="share-experience-section">
+            <h2>Share Your Experience</h2>
+            <form id="experience-form">
+                <input type="text" id="title" name="title" placeholder="Title of your experience" required>
+                <textarea id="content" name="content" placeholder="Describe your experience" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="experiences" class="experience-section">
+            <h2>Life Experiences</h2>
+            <div class="experiences-container">
+                <!-- Dynamic content will be added here -->
+            </div>
+        </section>
+        <section id="topics" class="topics-section">
+            <h2>Topics</h2>
+            <div class="topics-container">
+                <!-- Topic boxes will be added here -->
+            </div>
+        </section>
+        <section id="feedback" class="feedback-section">
+            <h2>Feedback</h2>
+            <form id="feedback-form">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Your feedback" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="about-us" class="about-us-section">
+            <h2>About Us</h2>
+            <div class="about-us-content">
+                <div class="developer-info">
+                    <h3>Adil Ahnaf</h3>
+                    <p>Phone: 01798597174</p>
+                    <p>Email: <a href="mailto:ad.ahnaf99@gmail.com">ad.ahnaf99@gmail.com</a></p>
+                </div>
+                <div class="divider"></div>
+                <div class="developer-info">
+                    <h3>Nazmul Huda</h3>
+                    <p>Phone: 01787064688</p>
+                    <p>Email: <a href="mailto:nazmul369@gmail.com">nazmul369@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lifegyaan. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

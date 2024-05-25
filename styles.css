@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.hero {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero form {
+    margin-bottom: 20px;
+}
+
+.hero form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.hero form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e67e22;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero .explore-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.share-experience-section, .experience-section, .topics-section, .feedback-section, .about-us-section, .login-section, .register-section, .logout-section {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.share-experience-section h2, .experience-section h2, .topics-section h2, .feedback-section h2, .about-us-section h2, .login-section h2, .register-section h2, .logout-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.share-experience-section form, .feedback-section form, .login-section form, .register-section form, .logout-section p {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.share-experience-section form input, .share-experience-section form textarea, .share-experience-section form button, 
+.feedback-section form input, .feedback-section form textarea, .feedback-section form button, 
+.login-section form input, .register-section form input, .login-section form button, .register-section form button, 
+.logout-section p a {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.share-experience-section form button, .feedback-section form button, .login-section form button, .register-section form button {
+    background-color: #e67e22;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.experiences-container, .topics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.experience-card, .topic-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.topic-box {
+    cursor: pointer;
+}
+
+.topic-box:nth-child(1) { background-color: #ffadad; }
+.topic-box:nth-child(2) { background-color: #ffd6a5; }
+.topic-box:nth-child(3) { background-color: #fdffb6; }
+.topic-box:nth-child(4) { background-color: #caffbf; }
+.topic-box:nth-child(5) { background-color: #9bf6ff; }
+.topic-box:nth-child(6) { background-color: #a0c4ff; }
+.topic-box:nth-child(7) { background-color: #bdb2ff; }
+.topic-box:nth-child(8) { background-color: #ffc6ff; }
+.topic-box:nth-child(9) { background-color: #fffffc; }
+.topic-box:nth-child(10) { background-color: #d0f4de; }
+
+.about-us-section {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.developer-info {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.developer-info h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.developer-info p {
+    font-size: 1.2em;
+}
+
+.developer-info a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+.divider {
+    width: 2px;
+    background-color: #e67e22;
+    height: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero form input,
+    .hero form button,
+    .hero .explore-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .experiences-container, .topics-container, .about-us-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-card, .topic-box {
+        width: 90%;
+    }
+
+    .divider {
+        width: 90%;
+        height: 2px;
+        margin: 20px 0;
+    }
+
+    .developer-info {
+        text-align: center;
+    }
+}
